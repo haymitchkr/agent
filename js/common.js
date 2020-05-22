@@ -20,25 +20,19 @@ $(function () {
 		pauseOnHover: false,
 	})
 	$('.advantages__slider').slick({
-  arrows: false,
-  infinite: true,
-  speed: 300,
   slidesToShow: 2,
-  centerMode: false,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 980,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 640,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
       }
     },
     {
