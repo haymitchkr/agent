@@ -495,17 +495,10 @@ span.crimson {
     margin-bottom: 30px; }
   .advantages__slider {
     max-width: 1600px;
-    margin: 0 auto;
-    padding-bottom: 30px; }
+    margin: 0 auto; }
     @media (max-width: 1200px) {
       .advantages__slider {
-        max-width: 940px; } }
-    @media (max-width: 640px) {
-      .advantages__slider {
-        max-width: 470px; } }
-    @media (max-width: 480px) {
-      .advantages__slider {
-        max-width: 310px; } }
+        max-width: 100%; } }
     .advantages__slider .slick-list {
       padding: 40px 150px; }
       @media (max-width: 1400px) {
