@@ -27,9 +27,7 @@ h1, h2
 	@media (max-width: 980px)
 		max-width: 610px
 	@media (max-width: 640px)
-		max-width: 450px 
-	@media (max-width: 480px)
-		max-width: 290px
+		max-width: 100%
 span.crimson
 	color: $crimson
 .btn
@@ -83,9 +81,12 @@ span.crimson
 				max-width: 90%
 			@media (max-width: 640px)
 				max-width: 100%
+				font-size: 38px
+			@media (max-width: 580px)
+				font-size: 34px
+			@media (max-width: 524px)
 				font-size: 28px
-			@media (max-width: 480px)
-				line-height: 32px
+				line-height: 30px
 		.header-subtitle
 			color: #ffffff
 			font-weight: 400
@@ -97,11 +98,12 @@ span.crimson
 				flex-direction: column
 				margin-bottom: 100px
 				max-width: 75%
-			@media (max-width: 980px)
-				font-size: 18px
 			@media (max-width: 640px)
 				width: 50%
 				line-height: 22px
+				margin-top: 40px
+			@media (max-width: 580px)
+				width: 55%
 			&__text
 				display: inline
 				width: 100%
@@ -111,6 +113,9 @@ span.crimson
 					margin-left: 0
 				@media (max-width: 640px)
 					margin-bottom: 15px
+					width: 80%
+				@media (max-width: 524px)
+					width: 100%
 				&::before
 					content: ""
 					width: 20px
@@ -147,10 +152,14 @@ span.crimson
 				margin-top: 150px
 				max-width: 100%
 			@media (max-width: 640px)
-				margin-top: 260px
+				margin-top: 200px
 			@media (max-width: 480px)
-				margin-top: 150px
-				margin-bottom: 40px
+				width: 75%
+				margin: 260px auto 40px auto
+			@media (max-width: 440px)
+				margin-top: 200px
+			@media (max-width: 400px)
+				margin-top: 160px
 			&__title
 				color: $black
 				font-size: 20px
@@ -165,10 +174,9 @@ span.crimson
 					line-height: 24px
 					font-size: 18px
 				@media (max-width: 640px)
-					width: 75%
+					width: 55%
 				@media (max-width: 480px)
 					width: 100%
-					font-size: 16px
 			form
 				position: relative
 				@media (max-width: 480px)
@@ -230,8 +238,11 @@ span.crimson
 					@media (max-width: 640px)
 						width: 45%
 					@media (max-width: 480px)
-						width: 90%
+						width: 60%
 						margin-top: 65px
+						padding: 6px 0
+					@media (max-width: 350px)
+						margin-top: 85px
 		.header-form2
 			box-shadow: -1px 7px 35px rgba(138, 138, 138, 0.2)
 			border-radius: 31px
@@ -245,8 +256,9 @@ span.crimson
 				width: 120%
 				padding: 40px 20px
 			@media (max-width: 640px)
-				width: 100%
+				width: 80%
 				padding: 20px 15px
+				margin: 0 auto
 			&__title
 				font-size: 18px
 				font-weight: 700
@@ -292,6 +304,8 @@ span.crimson
 					@media (max-width: 480px)
 						width: 100%
 						font-size: 14px
+					@media (max-width: 369px)
+						padding: 6px 15px
 	&__slider
 		min-width: 0
 		width: 45%
@@ -302,20 +316,18 @@ span.crimson
 		@media (max-width: 1200px)
 			width: 50%
 		@media (max-width: 980px)
-			left: 55%
+			left: 60%
 			top: 5%
 		@media (max-width: 640px)
-			top: 12%
-			left: 50%
-			width: 55%
+			top: 10%
+			left: 60%
+			width: 45%
 		@media (max-width: 480px)
-			width: 60%
 			top: 15%
 		&-item
-			display: inline-block !important
 			outline: none
 			img
-				width: 100%
+				width: 80%
 				height: auto
 		.slick-slide
 			z-index: 0 !important
@@ -335,8 +347,10 @@ span.crimson
 		@media (max-width: 980px)
 			max-width: 600px
 		@media (max-width: 640px)
-			max-width: 610px
+			max-width: 80%
 			font-size: 28px
+		@media (max-width: 480px)
+			max-width: 100%
 		&::before
 			content: "Кейсы"
 			position: absolute
@@ -365,7 +379,10 @@ span.crimson
 	&__slider
 		max-width: 1600px
 		margin: 0 auto
+		padding-bottom: 30px
 		@media (max-width: 1200px)
+			max-width: 940px
+		@media (max-width: 640px)
 			max-width: 100%
 		.slick-list
 			padding: 40px 150px
@@ -400,7 +417,8 @@ span.crimson
 			@media (max-width: 640px)
 				height: 630px
 			@media (max-width: 480px)
-				height: auto
+				height: 810px
+
 			&--inst
 				&::before
 					content: "\f16d"
@@ -529,6 +547,8 @@ span.crimson
 					bottom: 0
 					left: 0
 					border-radius: 20px
+					@media (max-width: 480px)
+						height: 40%
 			&__button
 				position: absolute
 				left: 45px
@@ -541,6 +561,8 @@ span.crimson
 				font-weight: 500
 				@media(max-width: 980px)
 					left: 10px
+				@media (max-width: 480px)
+					bottom: 15px
 				a
 					text-decoration: none
 					color: #f41242
@@ -564,6 +586,12 @@ span.crimson
 	background-position: center bottom
 	background-size: 100%
 	margin: 0 15px
+	@media (max-width: 980px)
+		width: 80%
+		padding: 100px 50px 20px 50px
+	@media (max-width: 640px)
+		width: 90%
+		padding: 100px 15px 20px 15px
 	.slider-item__images
 		display: flex
 		justify-content: space-between
@@ -605,6 +633,9 @@ span.crimson
 		width: 83%
 		margin-top: 30px
 		margin-bottom: 20px
+		@media (max-width: 640px)
+			font-size: 18px
+			margin-bottom: 10px
 	.slider-item__subtitle
 		color: $black
 		font-size: 16px
@@ -614,9 +645,9 @@ span.crimson
 	.slider-item__text
 		color: #848484
 		font-family: NotoSans
-		font-size: 16px
+		font-size: 14px
 		font-weight: 400
-		line-height: 31px
+		line-height: 20px
 		text-align: left
 	&--inst
 		&::before
