@@ -336,6 +336,7 @@ span.crimson
 
 .advantages
 	text-align: center
+	margin-bottom: 30px
 	&__title
 		max-width: 740px
 		margin: 0 auto
@@ -700,3 +701,340 @@ span.crimson
 			background-repeat: no-repeat
 			background-position: center top
 			text-align: center
+
+.strategy
+	margin-bottom: 100px
+	&__title
+		width: 70%
+		margin: 0 auto
+		text-align: center
+		position: relative
+		font-family: Montserrat
+		font-size: 30px
+		font-weight: 900
+		line-height: 40px
+		margin-bottom: 70px
+		color: $black
+		@media (max-width: 980px)
+			width: 100%
+		@media (max-width: 480px)
+			font-size: 28px
+		&::before
+			content: "Стратегия"
+			position: absolute
+			top: 100%
+			left: -25%
+			color: #dddddd
+			padding-left: 25px
+			font-size: 20px
+			font-weight: 400
+			line-height: 40px
+			width: 50px
+			text-transform: uppercase
+			background-image: url(../img/side-text-icon.png)
+			background-size: 20px 20px
+			background-repeat: no-repeat
+			background-position: 0 10px	
+			letter-spacing: 0.51px
+			transform: rotate(-90deg)
+			@media (max-width: 980px)
+				display: none
+
+
+	.table
+		position: relative
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-column-gap: 30px
+		grid-row-gap: 100px
+		margin-top: 50px
+		align-items: start
+		@media (max-width: 980px)
+			grid-template-columns: repeat(2, 1fr)
+			grid-column-gap: 25px
+			grid-row-gap: 90px
+		@media (max-width: 480px)
+			grid-template-columns: 1fr
+			grid-column-gap: 0
+			grid-row-gap: 70px
+		.table-icon
+				height: 190px
+				width: 190px
+				text-align: center
+				border-radius: 50%
+				border: 1px solid #e8e8e8
+				position: relative
+				margin: 0 auto
+				@media (max-width: 1200px)
+					width: 160px
+					height: 160px
+				&:before
+					content: ""
+					position: absolute
+					width: 210px
+					height: 210px
+					@media (max-width: 1200px)
+						width: 180px
+						height: 180px
+					background-color: transparent
+					top: 50%
+					left: 50%
+					border-radius: 50%
+					transform: translate(-50%, -50%)
+					box-shadow: -1px 7px 40px rgba(138, 138, 138, 0.2)
+				img
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+		&__start
+			grid-column: 1/1
+			@media(max-width: 980px)
+				grid-column: 1/3
+				grid-row: 2/3
+				width: 40%
+				margin: 0 auto
+				margin-top: -120px
+			@media (max-width: 640px)
+				width: 55%
+			@media(max-width: 480px)
+				grid-column: 1/2
+				width: 65%
+			&-icon
+				&:after
+					content: ""
+					position: absolute
+					height: 100px
+					width: 1px
+					background-color: #dcdcdc
+					bottom: -110px
+					left: 50%
+					@media (max-width: 980px)
+						display: none
+			h4
+				color: $black
+				text-align: center
+				margin-top: 80px
+				margin-bottom: 60px
+				@media (max-width: 1200px)
+					font-size: 0.85em
+			
+		&__card
+			grid-column: 2/5
+			margin: 0 auto
+			position: relative
+			@media (max-width: 1200px)
+				margin-left: 20px
+			@media (max-width: 980px)
+				grid-column: 1/3
+				margin-left: 0
+			@media (max-width: 480px)
+				grid-column: 1/2
+			img
+				width: 100%
+				height: auto
+				@media (max-width: 480px)
+					min-height: 320px
+				border-radius: 20px
+				box-shadow: -1px 7px 40px rgba(138, 138, 138, 0.2)
+			&-title
+				position: absolute
+				bottom: 40px
+				left: 50%
+				white-space: nowrap
+				transform: translate(-50%, 0)
+				padding: 25px 50px
+				background-color: rgba(#fff, 0.85)
+				border-radius: 20px
+				color: $black
+				font-family: Montserrat
+				font-size: 20px
+				font-weight: 700
+				line-height: 28px
+				@media(max-width: 640px)
+					font-size: 17px
+					padding: 15px 20px
+				@media (max-width: 480px)
+					white-space: normal
+					min-width: 250px
+					text-align: center
+					bottom: 25px
+
+
+		.large__vertical-line
+			&::before
+				content: ''
+				width: 1px
+				height: 120px
+				background-color: #dcdcdc
+				position: absolute
+				pointer-events: none
+				bottom: 100%
+				left: 50%
+				z-index: -1
+				@media (max-width: 980px)
+					display: none
+		.large__gorizontal-line
+			&::after
+				content: ''
+				width: 30px
+				height: 1px
+				top: 50%
+				left: 100%
+				position: absolute
+				pointer-events: none
+				background-color: #dcdcdc
+				@media (max-width: 980px)
+					display: none
+
+		&__item
+			position: relative
+			font-size: 0
+			line-height: 0
+			@media (max-width: 480px)
+				width: 80%
+				margin: 0 auto
+			.number
+				position: absolute
+				font-family: Montserrat
+				font-size: 37px
+				font-weight: 900
+				line-height: 28px
+				color: $crimson
+				text-decoration: none
+				z-index: -1
+				left: 50px
+				top: -18px
+			&-img
+				border-radius: 20px
+				box-shadow: -1px 7px 40px rgba(138, 138, 138, 0.2)
+				img
+					width: 100%
+					height: auto
+				&:hover
+					&::after,&::before
+						opacity: 1
+				&::after
+					content: ""
+					transition: all 0.3s ease
+					position: absolute
+					opacity: 0
+					left: 50%
+					top: 50%
+					transform: translate(-50%,-50%)
+					width: 100%
+					height: 100%
+					z-index: 2
+					border-radius: 20px
+					background-image: linear-gradient(35deg, rgba(251, 47, 78, 0.99) 0%, rgba(254, 176, 9, 0.99) 100%)
+				&::before
+					content: url(../img/table-hover.png)
+					opacity: 0
+					position: absolute
+					z-index: 3
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+					transition: all 0.3s ease
+			&-title
+				position: absolute
+				color: #2b2b2b
+				font-family: Montserrat
+				font-size: 16px
+				font-weight: 400
+				line-height: 26px
+				bottom: -40px
+				left: 50%
+				white-space: nowrap
+				transform: translate(-50%,0)
+				text-decoration: none
+
+		.table__end-icon
+			grid-column: 2/3
+			margin-left: 10px
+			@media (max-width: 1200px)
+				margin-top: -10px
+			@media (max-width: 980px)	
+				grid-column: 1/3
+				margin: 0 auto
+			@media(max-width: 480px)
+				grid-column: 1/2
+		.table__fact
+			grid-column: 3/5
+			margin-top: -20px
+			background-repeat: no-repeat
+			background-size: 100% 100%
+			padding: 45px
+			display: flex
+			position: relative
+			@media (max-width: 1200px)
+				padding: 30px
+			@media (max-width: 980px)
+				grid-column: 1/3
+				width: 85%
+				margin: 0 auto
+			@media (max-width: 640px)
+				width: 100%
+			@media(max-width: 480px)
+				grid-column: 1/2
+				flex-direction: column
+			&::before
+				content: ""
+				position: absolute
+				display: block
+				width: 400px
+				height: 200px
+				right: -10%
+				bottom: -25%
+				background-image: url(../img/gaech.png)
+				background-repeat: no-repeat
+				background-size: 100%
+				@media (max-width: 1200px)
+					width: 300px
+					height: 150px
+				@media (max-width: 480px)
+					bottom: -5%
+					right: 0
+
+			.maintext
+				font-family: Montserrat
+				font-size: 20px
+				font-weight: 700
+				line-height: 30px
+				color: $black
+				max-width: 60%
+				@media (max-width: 1200px)
+					font-size: 18px
+				@media (max-width: 640px)
+					font-size: 17px
+				@media (max-width: 480px)
+					max-width: 100%
+					text-align: left
+			.subtext
+				color: #a4a4a4
+				font-family: Montserrat
+				font-size: 14px
+				font-weight: 400
+				line-height: 26px
+				margin-left: 30px
+				@media (max-width: 1200px)
+					font-size: 12px
+				@media (max-width: 480px)
+					text-align: left
+					width: 55%
+					margin-left: 0
+					margin-top: 30px
+					margin-bottom: 50px
+		&__load-btn
+			display: none
+			@media (max-width: 980px)
+				display: block
+				grid-column: 1/3
+				width: 300px
+				margin: 0 auto
+			@media (max-width: 480px)
+				grid-column: 1/2
+		.mobile-hidden
+			display: block
+			@media (max-width: 980px)
+				display: none
