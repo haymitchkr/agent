@@ -48,3 +48,11 @@ $(function () {
 $('[data-fancybox="gallery"]').fancybox({
 	loop: true,
 });
+$(document).ready(function (){
+  $('.table__load-btn').click(function(){
+    $('.mobile-hidden').removeClass('mobile-hidden');
+    $('.table__load-btn').css({
+      'display':'none'
+    });
+  });
+});
