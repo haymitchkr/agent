@@ -44,6 +44,15 @@ $(function () {
     }
   ]
 	});
+  $('.team__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      infinity: false,
+      arrows: true,
+      prevArrow: $('.prev-arrow'),
+      nextArrow: $('.next-arrow'),
+  });
 });
 $('[data-fancybox="gallery"]').fancybox({
 	loop: true,
@@ -54,5 +63,16 @@ $(document).ready(function (){
     $('.table__load-btn').css({
       'display':'none'
     });
+  });
+  let teamTotal = $('.slick-track').children('.team-item').length;
+  $(function(){
+    $('.total-number').text(teamTotal);
+    console.log(teamTotal);
+  });
+  $('.current-number--normal').each(function(i){
+    $(this).text(++i);
+  });
+  $('.current-number--xsm').each(function(x){
+    $(this).text(++x);
   });
 });
