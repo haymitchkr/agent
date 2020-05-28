@@ -76,3 +76,18 @@ $(document).ready(function (){
     $(this).text(++x);
   });
 });
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
+$(window).scroll(function(){                              // отслеживаем событие
+   let pageHeight = $(document).height();               //page height
+   if ( $(window).scrollTop() >= (pageHeight*0.2)){                   // ставим условие
+      $('.link-top').css('display','block');         // определяем действие
+   } else {
+    $('.link-top').css('display','none');
+   };
+});
