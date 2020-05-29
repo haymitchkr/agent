@@ -22,6 +22,8 @@ $(function () {
 	$('.advantages__slider').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 980,
@@ -54,6 +56,9 @@ $(function () {
       nextArrow: $('.next-arrow'),
   });
 });
+$('[data-fancybox]').fancybox({
+  buttons: false,
+});
 $('[data-fancybox="gallery"]').fancybox({
 	loop: true,
 });
@@ -67,13 +72,9 @@ $(document).ready(function (){
   let teamTotal = $('.slick-track').children('.team-item').length;
   $(function(){
     $('.total-number').text(teamTotal);
-    console.log(teamTotal);
   });
-  $('.current-number--normal').each(function(i){
+  $('.current-number').each(function(i){
     $(this).text(++i);
-  });
-  $('.current-number--xsm').each(function(x){
-    $(this).text(++x);
   });
 });
 var $page = $('html, body');
